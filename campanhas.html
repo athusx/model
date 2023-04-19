@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campanhas Publicitárias</title>
+  <link rel="stylesheet" type="text/css" href="css/estilo.css">
+ 
+</head>
+<body>
+
+  <div class="capa"><img src="fotos/capa.png" alt=""></div>
+  <div class="faixa">
+    <ul>
+      <li><a href="https://athusx.github.io/modelo/">HOME</a></li>
+        <li><a href="biografia.html">BIOGRAFIA</li>
+          <li><a href="campanhas.html">CAMPANHAS PUBLICITÁRIAS</li>
+        <li><a href="contato.html">CONTATOS</a></li>
+
+    </ul> 
+  </div> 
+  </ul>
+  <img id="imagem" src="fotos/foto1.png" alt="Imagem 1">
+  <div class="botao">
+    <button  onclick="trocarImagem()">Trocar de imagem</button>
+  </div>
+   <script>
+    function trocarImagem() {
+  var imagem = document.getElementById("imagem");
+  if (imagem.src.match("foto1.png")) {
+    imagem.src = "fotos/foto2.png";
+    imagem.alt = "Imagem 2";
+  } else {
+    imagem.src = "fotos/foto3.png";
+    imagem.alt = "Imagem ";
+  }
+}
+
+  </script>
+</body>
+</html>
